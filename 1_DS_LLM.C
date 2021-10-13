@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-#include <dos.h>
+#include <direct.h>
+
+void displaycll();
+void llmake();
+// void clrscr();
+// int delay(750);
 
 struct node
 {
@@ -39,13 +44,13 @@ void displaycll()
         printf("LL creation :-\n\n");
         ptr = ptr->nxt;
         i++;
-        delay(750);
+        // delay(750);
     } while (ptr != NULL);
 }
 
 void main()
 {
-    clrscr();
+    // clrscr();
     printf("LL creation :-\n\n");
     llmake();
     displaycll();
